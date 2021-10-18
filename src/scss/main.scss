@@ -1,0 +1,198 @@
+// 폰트 설정
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR|Noto+Serif+SC&display=swap');
+$font-family-sans-serif: 'Noto Serif SC', 'Noto Serif KR', serif;
+
+/*
+ * Bootstrap 설정 변경
+ */
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1200px) !default;
+$navbar-padding-y: 0rem;
+$navbar-padding-x: 0rem;
+
+$dropdown-bg: black;
+$dropdown-color: white;
+$dropdown-link-color: white;
+$body-bg: #030316ef;
+$body-color: aliceblue;
+
+$modal-content-color: black;
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/utilities";
+
+/*
+ * Bootstrap-vue 초기화
+ */
+@import '~bootstrap-vue/src/variables';
+@import '~bootstrap-vue/src/utilities';
+@import '~bootstrap-vue/src/components/dropdown/index';
+@import '~bootstrap-vue/src/components/modal/index';
+@import '~bootstrap-vue/src/components/navbar/index';
+
+html, body {
+  height: 100%;
+  padding: 0;
+  user-select: none;
+  background-color: #030316ef !important;
+  background: radial-gradient(600.00px at 50% 50%, #212132 0%, #030316 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: aliceblue;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+p, a, div {
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+div.ani-sakura {
+  position: fixed;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.section {
+  margin: 128px auto 128px;
+}
+
+.section-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0 4px black;
+  margin: 1.25rem auto;
+  border-style: solid;
+  border-image: linear-gradient(to right, #DA241C 0%, #5B110D 106%);
+  border-image-slice: 1;
+  border-image-width: 0 0 4px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (min-width: 992px) {
+    font-size: 2.75rem;
+  }
+}
+
+.section-smalltitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0 4px black;
+  margin: 1.25rem auto;
+
+  @media only screen and (min-width: 892px) {
+    font-size: 1.75rem;
+    margin-top: 30px;
+  }
+}
+
+.section-intro {
+  font-size: 1.125rem;
+  text-shadow: 0 4px black;
+
+  @media only screen and (min-width: 992px) {
+    font-size: 2rem;
+    margin-top: 1.25rem;
+  }
+}
+
+.success-modal-header {
+  border: none;
+}
+
+.success-modal-footer {
+  border: none;
+}
+
+.flower {
+  width: 60px;
+  height: 66px;
+
+  @media only screen and (min-width: 768px) {
+    width: 130px;
+    height: 144px;
+  }
+}
+
+.btn-hanafuda {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  color: white;
+  height: 48px;
+  line-height: 34px;
+  background: linear-gradient(180deg, #DA241C 0%, #5B110D 100%);
+  border-radius: 14px !important;
+  border: none;
+  cursor: pointer;
+
+  @media only screen and (min-width: 768px) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.btn-moonpay {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  color: white;
+  height: 120px;
+  height: 48px;
+  line-height: 34px;
+  background: linear-gradient(180deg, rgb(71, 82, 236) 0%, rgb(4, 9, 80) 100%);
+  border-radius: 14px !important;
+  border: none;
+  cursor: pointer;
+
+  @media only screen and (min-width: 768px) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.btn-hanafuda:hover {
+  background-color: linear-gradient(180deg, #DA241C 0%, #5B110D 100%);
+  color: aliceblue;
+}
+
+.btn-hanafuda:focus {
+  outline: none;
+  border: none;
+}
